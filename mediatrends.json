@@ -1,0 +1,26 @@
+{
+  "name": "mediatrends",
+  "title": "Mediatrends",
+  "description": "Media adnetwork mas grande de chile en el target vertical",
+  "version": "0.0.2",
+  "homepage": "http://www.mediatrends.cl",
+  "author": {
+    "name": "Montana Studio",
+    "email": "mauro@montana-studio.com",
+    "url": "http://www.montana-studio.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mediatrends/mediatrends.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mediatrends/mediatrends/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.mediatrends.cl/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": []
+}

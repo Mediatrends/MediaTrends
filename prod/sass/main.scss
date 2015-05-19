@@ -1,0 +1,132 @@
+$mobile-max-portrait:"screen and (min-width:320px) and (max-width: 640px)";
+
+#about{
+	.fancy-line{
+		background:{color:#fff;}
+	}
+	.section-heading{
+		.additional-heading{
+			display: table;
+			color:#fff;
+			background:{color:#333;}
+			padding:{left:5px;right:5px;}
+		}
+		.heading{
+			@extend .additional-heading;
+			background: {color:#fff;}
+			color:#000;
+		}
+	}
+	.icon{
+		color:#fff;
+		&:hover{
+			color:#333;
+		}
+	}
+}
+#metricas{
+	.fancy-line{
+		background:{color:#000;}
+	}
+	.section-heading{
+		.additional-heading{
+			display: table;
+			background:{color:#333;}
+			padding:{left:5px;right:5px;}
+		}
+		.heading{
+			@extend .additional-heading;
+			background: {color:#000;}
+		}
+	}
+	.numbers{
+		.service-content{
+			h5{
+				display: table;
+				background:{color: #000;}
+				padding: 0 5px;
+				margin:{bottom: 0;}
+			}
+			p{
+				color: #000;
+				display: table;
+				background:{color: #fff;}
+			}
+		}
+	}
+}
+#specs{
+	@extend #about;
+	.specs-inner{
+		#accordion{
+			.panel{
+				.panel-heading{
+					h6{
+						a{
+							background:{image:url('../../../uploads/2015/04/bg-pattern.svg');}
+						}
+					}
+				}
+				.panel-collapse{
+					.panel-body{
+						p:first-child{
+							display: none;
+						}
+						p:last-child{
+							display: none;
+						}
+						@media #{$mobile-max-portrait}{
+							padding:20px 0;
+						}
+					}
+					.info-box{
+						h2{
+							margin: 0;
+							background: {color:#333;}
+							display: table;
+							padding:0 5px;
+							font:{weight:300;}
+							@media #{$mobile-max-portrait}{
+								font:{size:20px;}
+							}
+						}
+						p{
+							display: table;
+							background:{color:#fff;}
+							color:#000;
+							padding:0 5px;
+							margin:0;
+							span{
+								display: inline;
+								background:{color:#000;}
+								color:#fff;
+								padding:0 3px;
+							}
+							code{
+								font: {size:70%;}
+								color:#fff;
+								background: {color:#333;}
+								line:{height: 1;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#clientes{
+	@extend #metricas;
+	.owl-wrapper{
+		.owl-item{
+			.client{
+				text-align:center !important;
+			}
+		}
+	}
+	.parrafo-client{
+		p{
+			color:#000;
+		}
+	}
+}
